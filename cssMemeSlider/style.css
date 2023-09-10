@@ -19,7 +19,7 @@ input[name='slider_pagination'] {
 .slider {
     width: 95vmin;
     height: 80vmin;
-    padding: 5vh;
+    padding: 2vh;
     margin: 0 auto;
     background-color: #608d64;
     box-shadow: 0 0 1.5rem #242424;
@@ -40,8 +40,8 @@ input[name='slider_pagination'] {
 }
 
 .content_wrapper {
-    width: 60vmin;
-    height: 60vmin;
+    width: 90vmin;
+    height: 90vmin;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -50,37 +50,18 @@ input[name='slider_pagination'] {
 .content {
     display: flex;
     justify-content: space-between;
-    width:  300vmin;
+    width:  450vmin;
     height:  100%;
     transition: all 0.2s ease-out;
 }
 
 
 
-.img1 {
-    width: 60vmin;
+.img1, .img2, .img3, .img4, .img5 {
+    width: 90vmin;
     object-fit: contain;
 }
 
-.img2 {
-    width: 60vmin;
-    object-fit: contain;
-}
-
-.img3 {
-    width: 60vmin;
-    object-fit: contain;
-}
-
-.img4 {
-    width: 60vmin;
-    object-fit: contain;
-}
-
-.img5 {
-    width: 60vmin;
-    object-fit: contain;
-}
 
 .pagination {
     display: flex;
@@ -160,19 +141,19 @@ label:active div {
  }
 
 #input2:checked ~ .content_wrapper .content {
-    transform: translateX(-60vmin);
+    transform: translateX(-90vmin);
 }
 
 #input3:checked ~ .content_wrapper .content {
-    transform: translateX(-120vmin);
+    transform: translateX(-180vmin);
  }
 
 #input4:checked ~  .content_wrapper .content {
-    transform: translateX(-180vmin);
+    transform: translateX(-270vmin);
 }
 
 #input5:checked ~ .content_wrapper .content {
-    transform: translateX(-240vmin);
+    transform: translateX(-360vmin);
  }
 
 .text_content {
