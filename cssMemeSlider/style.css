@@ -40,8 +40,8 @@ input[name='slider_pagination'] {
 }
 
 .content_wrapper {
-    width: 60vh;
-    height: 60vh;
+    width: 60vmin;
+    height: 60vmin;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -50,7 +50,7 @@ input[name='slider_pagination'] {
 .content {
     display: flex;
     justify-content: space-between;
-    width:  300vh;
+    width:  300vmin;
     height:  100%;
     transition: all 0.2s ease-out;
 }
@@ -58,27 +58,27 @@ input[name='slider_pagination'] {
 
 
 .img1 {
-    width: 60vh;
+    width: 60vmin;
     object-fit: contain;
 }
 
 .img2 {
-    width: 60vh;
+    width: 60vmin;
     object-fit: contain;
 }
 
 .img3 {
-    width: 60vh;
+    width: 60vmin;
     object-fit: contain;
 }
 
 .img4 {
-    width: 60vh;
+    width: 60vmin;
     object-fit: contain;
 }
 
 .img5 {
-    width: 60vh;
+    width: 60vmin;
     object-fit: contain;
 }
 
@@ -160,37 +160,37 @@ label:active div {
  }
 
 #input2:checked ~ .content_wrapper .content {
-    transform: translateX(-60vh);
+    transform: translateX(-60vmin);
 }
 
 #input3:checked ~ .content_wrapper .content {
-    transform: translateX(-120vh);
+    transform: translateX(-120vmin);
  }
 
 #input4:checked ~  .content_wrapper .content {
-    transform: translateX(-180vh);
+    transform: translateX(-180vmin);
 }
 
 #input5:checked ~ .content_wrapper .content {
-    transform: translateX(-240vh);
+    transform: translateX(-240vmin);
  }
 
 .text_content {
-    width: 40vh;
-    height: 4vh;
+    width: 40vmin;
+    height: 4vmin;
     overflow: hidden;
     display: flex;
 }
 .text_content_wrapper {
     display: flex;
-    width: 200vh;
+    width: 200vmin;
     transition: all 0.2s ease-out;
     font-size: 3vmin;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif
 }
 .text {
-    width: 40vh;
+    width: 40vmin;
 
 }
 
@@ -199,17 +199,17 @@ label:active div {
  }
 
 #input2:checked ~ .wrapper .text_content .text_content_wrapper {
-  transform: translateX(-40vh);
+  transform: translateX(-40vmin);
 }
 
 #input3:checked ~ .wrapper  .text_content .text_content_wrapper {
-    transform: translateX(-80vh);
+    transform: translateX(-80vmin);
  }
 
 #input4:checked ~ .wrapper  .text_content .text_content_wrapper {
-    transform: translateX(-120vh);
+    transform: translateX(-120vmin);
 }
 
 #input5:checked ~ .wrapper  .text_content .text_content_wrapper {
-    transform: translateX(-160vh);
+    transform: translateX(-160vmin);
  }
