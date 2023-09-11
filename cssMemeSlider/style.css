@@ -29,6 +29,7 @@ input[name='slider_pagination'] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2vmin;
 }
 
 .wrapper {
@@ -36,7 +37,6 @@ input[name='slider_pagination'] {
     justify-content: space-between;
     align-items: center;
     width: 90vmin;
-    margin-top: 2vmin;
 }
 
 .content_wrapper {
