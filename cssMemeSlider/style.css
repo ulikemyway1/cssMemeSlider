@@ -19,38 +19,32 @@ input[name='slider_pagination'] {
 .slider {
     width: 95vmin;
     height: 80vmin;
-    padding-top: 2vh;
     margin: 0 auto;
+    padding: 2.5vmin;
     background-color: #608d64;
-    box-shadow: 0 0 1.5rem #242424;
-    border: 0.2rem solid #74996f;
-    border-radius: 6vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 50vmin 35vmin;
+    grid-template-rows: 90% 5%;
+    grid-template-areas:
+    'A A'
+    'B C';
     align-items: center;
-    gap: 2vmin;
+    gap: 5vmin;
 }
 
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90vmin;
-}
 
 .content_wrapper {
-    width: 90vmin;
-    height: 90vmin;
+    width: 85vmin;
+    height: 100%;
     overflow: hidden;
     margin: 0 auto;
+    grid-area: A;
 }
 
 
 .content {
     display: flex;
-    justify-content: space-between;
-    width:  450vmin;
+    width:  425vmin;
     height:  100%;
     transition: all 0.2s ease-out;
 }
@@ -58,21 +52,23 @@ input[name='slider_pagination'] {
 
 
 .img1, .img2, .img3, .img4, .img5 {
-    width: 90vmin;
+    width: 85vmin;
     object-fit: scale-down;
 }
 
 
 .pagination {
+    grid-area: C;
     display: flex;
+    justify-self: end;
 }
 
 label {
     display: block;
-    width: 6vmin;
-    height: 6vmin;
+    width: 4vmin;
+    height: 4vmin;
     border-radius: 100%;
-    margin: 0.5vmin;
+    margin: 1vmin;
     cursor: pointer;
     transition: all 0.2s ease-in;
     display: flex;
@@ -81,8 +77,8 @@ label {
 }
 
 label div {
-    width: 3vmin;
-    height: 3vmin;
+    width: 2vmin;
+    height: 2vmin;
     transition: all 0.2s ease-in;
     background: rgb(92, 92, 92);
     border-radius: 100%;
@@ -99,23 +95,23 @@ label:active div {
     transform: scale(2);
 }
 
-#input1:checked ~ .wrapper  .pagination label:nth-of-type(1) div {
+#input1:checked ~  .pagination label:nth-of-type(1) div {
     background: rgb(142, 188, 226);
     transform: scale(1.5);
 }
-#input2:checked ~ .wrapper  .pagination label:nth-of-type(2) div {
+#input2:checked ~ .pagination label:nth-of-type(2) div {
     background: rgb(142, 188, 226);
     transform: scale(1.5);
 }
-#input3:checked ~ .wrapper  .pagination label:nth-of-type(3) div {
+#input3:checked ~ .pagination label:nth-of-type(3) div {
     background: rgb(142, 188, 226);
     transform: scale(1.5);
 }
-#input4:checked ~ .wrapper  .pagination label:nth-of-type(4) div {
+#input4:checked ~ .pagination label:nth-of-type(4) div {
     background: rgb(142, 188, 226);
     transform: scale(1.5);
 }
-#input5:checked ~ .wrapper  .pagination label:nth-of-type(5) div {
+#input5:checked ~ .pagination label:nth-of-type(5) div {
     background: rgb(142, 188, 226);
     transform: scale(1.5);
 }
@@ -141,19 +137,19 @@ label:active div {
  }
 
 #input2:checked ~ .content_wrapper .content {
-    transform: translateX(-90vmin);
+    transform: translateX(-85vmin);
 }
 
 #input3:checked ~ .content_wrapper .content {
-    transform: translateX(-180vmin);
+    transform: translateX(-170vmin);
  }
 
 #input4:checked ~  .content_wrapper .content {
-    transform: translateX(-270vmin);
+    transform: translateX(-255vmin);
 }
 
 #input5:checked ~ .content_wrapper .content {
-    transform: translateX(-360vmin);
+    transform: translateX(-340vmin);
  }
 
 .text_content {
@@ -161,6 +157,7 @@ label:active div {
     height: 4vmin;
     overflow: hidden;
     display: flex;
+    grid-area: B;
 }
 .text_content_wrapper {
     display: flex;
@@ -175,35 +172,42 @@ label:active div {
 
 }
 
-#input1:checked ~ .wrapper .text_content .text_content_wrapper {
+#input1:checked ~ .text_content .text_content_wrapper {
     margin-left: 0;
  }
 
-#input2:checked ~ .wrapper .text_content .text_content_wrapper {
+#input2:checked ~ .text_content .text_content_wrapper {
   transform: translateX(-40vmin);
 }
 
-#input3:checked ~ .wrapper  .text_content .text_content_wrapper {
+#input3:checked ~ .text_content .text_content_wrapper {
     transform: translateX(-80vmin);
  }
 
-#input4:checked ~ .wrapper  .text_content .text_content_wrapper {
+#input4:checked ~ .text_content .text_content_wrapper {
     transform: translateX(-120vmin);
 }
 
-#input5:checked ~ .wrapper  .text_content .text_content_wrapper {
+#input5:checked ~ .text_content .text_content_wrapper {
     transform: translateX(-160vmin);
  }
 
  @media (max-width: 768px) {
     
-    .wrapper {
-        flex-direction: column;
-        gap: 2vmin;
+    .slider {
+        grid-template-areas:
+        'A'
+        'C'
+        'B';
+        grid-template-rows: 55vmin 5vmin 5vmin;
+        grid-template-columns: 100%;
     }
-    .text_content {
-        order: 1;
-        align-self: flex-start;
+
+    .pagination {
+        justify-self: center;
+        width: 25%;
+        
     }
+
 
  }
