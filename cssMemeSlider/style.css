@@ -19,7 +19,7 @@ input[name='slider_pagination'] {
 .slider {
     width: 95vmin;
     height: 80vmin;
-    padding: 2.5vmin;
+    padding-top: 2vh;
     margin: 0 auto;
     background-color: #608d64;
     box-shadow: 0 0 1.5rem #242424;
@@ -35,12 +35,12 @@ input[name='slider_pagination'] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 90vmin;
     margin-top: 2vmin;
 }
 
 .content_wrapper {
-    width: 90%;
+    width: 90vmin;
     height: 90vmin;
     overflow: hidden;
     margin: 0 auto;
@@ -59,7 +59,7 @@ input[name='slider_pagination'] {
 
 .img1, .img2, .img3, .img4, .img5 {
     width: 90vmin;
-    object-fit: cover;
+    object-fit: scale-down;
 }
 
 
