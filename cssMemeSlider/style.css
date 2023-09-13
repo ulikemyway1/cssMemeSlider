@@ -197,7 +197,7 @@ label:active div {
     transform: translateX(-160vmin);
  }
 
- @media (max-width: 768px) {
+ @media (max-width: 767px) {
     
     .slider {
         grid-template-areas:
