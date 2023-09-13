@@ -21,38 +21,42 @@ input[name='slider_pagination'] {
     height: 80vmin;
     margin: 0 auto;
     padding: 2.5vmin;
+    padding-bottom: 4vmin;
     background-color: #212121;
     box-shadow: #606060 2vmin 0vmin 2vmin;
     display: grid;
-    grid-template-columns: 50vmin 35vmin;
+    grid-template-columns: 55vmin 35vmin;
     grid-template-rows: 90% 5%;
     grid-template-areas:
     'A A'
     'B C';
     align-items: center;
-    gap: 5vmin;
+    column-gap: 0;
+    row-gap: 3.5vmin;
 }
 
 .content_wrapper {
-    width: 85vmin;
+    width: 90vmin;
     height: 100%;
     overflow: hidden;
     margin: 0 auto;
     grid-area: A;
+    display: flex;
 }
 
 
 .content {
     display: flex;
-    width:  425vmin;
+    width:  450vmin;
     height:  100%;
     transition: all 0.2s ease-out;
+    background-color: #ffffff;
 }
 
 
 
 .img1, .img2, .img3, .img4, .img5 {
-    width: 85vmin;
+    width: 90vmin;
     object-fit: scale-down;
 }
 
@@ -137,19 +141,19 @@ label:active div {
  }
 
 #input2:checked ~ .content_wrapper .content {
-    transform: translateX(-85vmin);
+    transform: translateX(-90vmin);
 }
 
 #input3:checked ~ .content_wrapper .content {
-    transform: translateX(-170vmin);
+    transform: translateX(-180vmin);
  }
 
 #input4:checked ~  .content_wrapper .content {
-    transform: translateX(-255vmin);
+    transform: translateX(-270vmin);
 }
 
 #input5:checked ~ .content_wrapper .content {
-    transform: translateX(-340vmin);
+    transform: translateX(-360vmin);
  }
 
 .text_content {
