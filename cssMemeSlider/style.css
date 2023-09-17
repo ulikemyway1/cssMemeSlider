@@ -176,6 +176,7 @@ label:active div {
     width: 40vmin;
     opacity: 0;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 #input1:checked ~ .text_content .text_content_wrapper {
