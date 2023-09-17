@@ -174,7 +174,8 @@ label:active div {
 }
 .text {
     width: 40vmin;
-
+    opacity: 0;
+    overflow: hidden;
 }
 
 #input1:checked ~ .text_content .text_content_wrapper {
@@ -196,6 +197,44 @@ label:active div {
 #input5:checked ~ .text_content .text_content_wrapper {
     transform: translateX(-160vmin);
  }
+
+ #input1:checked ~ .text_content .text_content_wrapper .text:nth-of-type(1) {
+    animation-name: fade;
+    animation-duration: 0.7s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+ }
+
+
+ 
+ #input2:checked ~ .text_content .text_content_wrapper .text:nth-of-type(2) {
+    animation-name: fade;
+    animation-duration: 0.7s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+ }
+
+ #input3:checked ~ .text_content .text_content_wrapper .text:nth-of-type(3)  {
+    animation-name: fade;
+    animation-duration: 0.7s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+ }
+
+ #input4:checked ~ .text_content .text_content_wrapper .text:nth-of-type(4)  {
+    animation-name: fade;
+    animation-duration: 0.7s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+ }
+
+ #input5:checked ~ .text_content .text_content_wrapper .text:nth-of-type(5)  {
+    animation-name: fade;
+    animation-duration: 0.7s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+ }
+
 
  @media (max-width: 767px) {
     
@@ -224,4 +263,16 @@ label:active div {
         height: 4vmin;
     }
 
+ }
+
+ @keyframes fade {
+    0% {
+        opacity: 0; 
+        width: 0;     
+    }
+  
+    100% {
+        opacity: 1;
+        width: 40vmin;
+    }
  }
